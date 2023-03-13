@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Profile from "./profile/Profile";
+import "./App.css";
+import image from "./profile/photo_2023-03-02_23-14-15.jpg";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center items-center min-h-screen">
+      <Profile
+        profession="Student"
+        fullName="Oussama Ezitouni"
+        bio="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia omnis cupiditate rem iusto voluptate rerum eum minima voluptas saepe neque, incidunt magnam hic, animi debitis nostrum, fugiat at? Voluptatum?"
+      >
+        {image}
+      </Profile>
     </div>
   );
 }
